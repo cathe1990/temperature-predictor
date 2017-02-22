@@ -1,0 +1,22 @@
+	[Installation]
+
+- Install python3, after that check if you have the pip3.
+- Install tensor flow, spicy, scikit-learn
+ (pip install **, pip install -U scikit-learn)
+
+[Example]
+
+from predictor import test
+
+# call test function in test module
+test.test()
+
+from predictor import netatmo
+
+netatmo.last_record()
+
+import datetime as dt
+# get records from 2015-12-01 to 2016-03-01
+
+netatmo.get_record(start_time=dt.datetime(2015,12,1,0,0,0),
+                   end_time=dt.datetime(2016,3,1,0,0,0))
